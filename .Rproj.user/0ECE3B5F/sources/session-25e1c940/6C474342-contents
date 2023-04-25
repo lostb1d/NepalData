@@ -1,0 +1,2 @@
+library("NepalData")
+district <- Nepal_District()

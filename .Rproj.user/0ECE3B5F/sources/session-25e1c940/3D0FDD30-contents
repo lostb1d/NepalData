@@ -1,0 +1,21 @@
+# Nepal Data
+#
+# This is a package to easily access the geospatial data of the Nepal
+# You can access the Feature Data as well as Attribute Data
+# You can learn more about package authoring with RStudio at:
+#
+#   http://r-pkgs.had.co.nz/
+#
+# Some useful keyboard shortcuts for package authoring:
+#
+#   Install Package:           'Ctrl + Shift + B'
+#   Check Package:             'Ctrl + Shift + E'
+#   Test Package:              'Ctrl + Shift + T'
+library(sf)
+setwd("./R/")
+Nepal_District <-function(){
+  Nepal <- st_read("districts/districts.shp")
+  plot(st_geometry(Nepal))
+}
+
+
