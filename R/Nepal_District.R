@@ -14,7 +14,7 @@
 library(sf)
 setwd("./R/")
 Nepal_District <-function(){
-  Nepal <- st_read("districts/districts.shp")
+  Nepal <- st_read("./districts/districts.shp")
   plot(st_geometry(Nepal))
 }
 
